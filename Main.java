@@ -8,12 +8,10 @@ public class Main {
         var covid = new Covid19();
         var cold = new CommonCold();
 
-        List<String> mySymptoms = new ArrayList<>();
-        mySymptoms.addAll(covid.getSymptoms());
-        mySymptoms.addAll(cold.getSymptoms());
+        Human poolHuman = new Human();
 
-        mySymptoms.stream().distinct().forEach(System.out::println);
-        
+        poolHuman.infection(covid, cold);
+        poolHuman.whereDoesItHurt();
     }
-    
+
 }

@@ -8,10 +8,10 @@ public class Main {
         var covid = new Covid19();
         var cold = new CommonCold();
 
-        Human poolHuman = new Human();
+        Human poorHuman = new Human();
 
-        poolHuman.infection(covid, cold);
-        poolHuman.whereDoesItHurt();
+        poorHuman.infection(covid, cold);
+        poorHuman.whereDoesItHurt();
     }
 
 }

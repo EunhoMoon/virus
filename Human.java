@@ -16,7 +16,7 @@ class Human {
     }   
 
     public void whereDoesItHurt() {
-        if (this.viruses.size() == 0) {
+        if (this.viruses.isEmpty()) {
             System.out.println("Healthy");
             return;
         }
